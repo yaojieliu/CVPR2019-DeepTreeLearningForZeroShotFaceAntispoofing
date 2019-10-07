@@ -1,4 +1,3 @@
-# CVPR2019-DeepTreeLearningForZeroShotFaceAntispoofing
 # Deep Tree Learning for Zero-shot Face Anti-Spoofing
 Yaojie Liu, Joel Stehouwer, Amin Jourabloo, Xiaoming Liu
 
