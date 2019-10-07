@@ -30,25 +30,19 @@ from model.model import Model
 def main(argv=None):
     # Configurations
     config = Config()
-    prefix = '/media/liuyaoj1/cvlab3114/Oulu/bin/train/'
-    config.DATA_DIR = [prefix+'*_*_*_1',
-                       prefix+'*_*_*_1',
-                       prefix+'*_*_*_2',
-                       prefix+'*_*_*_4']
-    config.LOG_DIR = './log/P2'
+    config.DATA_DIR = ['/data/']
+    config.LOG_DIR = './log/model'
     config.MODE = 'training'
-    config.STEPS_PER_EPOCH_VAL = 100
+    config.STEPS_PER_EPOCH_VAL = 180
     config.display()
 
     # Get images and labels.
-    dataset_train = Dataset(config)
-
+    dataset_train = Dataset(config, 'train')
     # Build a Graph
     model = Model(config)
 
     # Train the model
     model.compile()
-    model.train(dataset_train)
-
+    model.train(dataset_train, None)
 
 main()
