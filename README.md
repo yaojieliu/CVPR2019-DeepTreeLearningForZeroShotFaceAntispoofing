@@ -2,7 +2,7 @@
 # Deep Tree Learning for Zero-shot Face Anti-Spoofing
 Yaojie Liu, Joel Stehouwer, Amin Jourabloo, Xiaoming Liu
 
-![alt text](https://yaojieliu.github.io/images/cvpr19.jpg)
+![alt text](https://yaojieliu.github.io/images/cvpr19.png)
 
 ## Setup
 Install the Tensorflow 2.0.
