@@ -39,16 +39,16 @@ class Config(object):
 
     TRU_PARAMETERS = {
         "alpha": 1e-3,
-        "beta": 1e-4,
-        "mu_update_rate": 5e-2,
+        "beta": 1e-2,
+        "mu_update_rate": 1e-3,
     }
 
     # Training Meta
-    STEPS_PER_EPOCH = 2000
-    MAX_EPOCH = 20
+    STEPS_PER_EPOCH = 1000
+    MAX_EPOCH = 40
     NUM_EPOCHS_PER_DECAY = 12.0   # Epochs after which learning rate decays
-    BATCH_SIZE = 24
-    LEARNING_RATE = 0.01          # Initial learning rate.
+    BATCH_SIZE = 32
+    LEARNING_RATE = 0.001          # Initial learning rate.
     LEARNING_MOMENTUM = 0.999     # The decay to use for the moving average.
 
     def __init__(self):
