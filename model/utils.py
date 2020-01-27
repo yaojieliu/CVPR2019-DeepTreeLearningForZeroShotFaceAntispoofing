@@ -74,7 +74,7 @@ class Linear(layers.Layer):
             # use only the visiting samples
             index = tf.where(tf.greater(mask[:, 0], tf.constant(0.)))
             index_not = tf.where(tf.equal(mask[:, 0], tf.constant(0.)))
-            x_sub = tf.gather_nd(x, index)
+            x_sub = tf.gather_nd(x, index) - tf.stop_gradient(self.mu)
             x_not = tf.gather_nd(x, index_not)
             x_sub_t = tf.transpose(x_sub, [1, 0])
 
